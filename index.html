@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="weather-pages" class="weather-pages">
+        <div id="page-one" class="page-one">
+          <div id="main-data" class="main-data">
+            <p id="city" class="city"></p>
+            <p id="temp" class="temp"></p>
+            <p id="conditions" class="conditions"></p>
+          </div>
+          <div id="sub-data" class="sub-data">
+            <hr />
+            <div id="sub-data-real-feel" class="real-feel">
+              <p>REAL FEEL</p>
+              <p id="real_feel"></p>
+            </div>
+            <hr />
+            <div id="sub-data-humidity" class="humidity">
+              <p>HUMIDITY</p>
+              <p id="humidity"></p>
+            </div>
+            <hr />
+            <div id="sub-data-wind-speed" class="wind-speed">
+              <p>WIND SPEED</p>
+              <p id="wind_speed"></p>
+            </div>
+            <hr />
+            <div id="sub-data-visibility" class="visibility">
+              <p>VISIBILITY</p>
+              <p id="visibility"></p>
+            </div>
+            <hr />
+          </div>
+          <div id="forecast-data" class="forecast-data">
+            <p id="day"></p>
+            <img id="icon" class="icon" src="" />
+            <p id="high-low-temp"></p>
+          </div>
+        </div>
+        <div id="page-two" class="page-two">
+          <p>See whats happening around</p>
+          <!--   should represent visually other area in that country only   -->
+          <div id="map-area" class="map-area"></div>
+        </div>
+      </div>
+      <div id="left-arrow" class="left-arrow"><i id="left" class="fa fa-chevron-left"></i></div>
+      <div id="right-arrow" class="right-arrow"><i id="right" class="fa fa-chevron-right"></i></div>
+      <div id="weather-btns" class="weather-btns">
+        <button id="map-btn" class="btns"><i class="fa fa-map icons"></i></button>
+        <div id="carousel" class="carousel">
+          <div id="main-page" class="main-page active"></div>
+          <div id="sub-page" class="sub-page"></div>
+        </div>
+        <button id="convert-btn" class="btns">&deg</button>
+      </div>
+</body>
+</html>
