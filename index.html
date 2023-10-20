@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="./script.js" defer ></script>
 </head>
 <body>
     <div id="weather-pages" class="weather-pages">
         <div id="page-one" class="page-one">
           <div id="main-data" class="main-data">
-            <p id="city" class="city"></p>
-            <p id="temp" class="temp"></p>
-            <p id="conditions" class="conditions"></p>
+            <p id="city" class="city">CITY</p>
+            <p id="temp" class="temp">TEMP</p>
+            <p id="conditions" class="conditions">CONDITIONS</p>
           </div>
           <div id="sub-data" class="sub-data">
             <hr />
@@ -48,8 +51,12 @@
           <div id="map-area" class="map-area"></div>
         </div>
       </div>
-      <div id="left-arrow" class="left-arrow"><i id="left" class="fa fa-chevron-left"></i></div>
-      <div id="right-arrow" class="right-arrow"><i id="right" class="fa fa-chevron-right"></i></div>
+      <div id="left-arrow" class="left-arrow">
+        <i id="left" class="fa fa-chevron-left"></i>
+      </div>
+      <div id="right-arrow" class="right-arrow">
+        <i id="right" class="fa fa-chevron-right"></i>
+      </div>
       <div id="weather-btns" class="weather-btns">
         <button id="map-btn" class="btns"><i class="fa fa-map icons"></i></button>
         <div id="carousel" class="carousel">
@@ -57,6 +64,6 @@
           <div id="sub-page" class="sub-page"></div>
         </div>
         <button id="convert-btn" class="btns">&deg</button>
-      </div>
+    </div>
 </body>
 </html>

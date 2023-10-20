@@ -23,12 +23,11 @@ const map_btn = document.getElementById("map-btn");
 const convert_btn = document.getElementById("convert-btn");
 const page_one = document.getElementById("page-one");
 const page_two = document.getElementById("page-two");
-
 var weather_data;
 var isDegreeFlag = false; //flag used by the icon below
 var isMapFlag = false; //flag used by the icon below
 //acts as my icon
-convert_btn.innerHTML = "&deg C";
+    convert_btn.innerHTML = "&deg C";
 // get user location with HTML5 geolocation API...
 const getLocation = () => {
   if (navigator.geolocation) {
@@ -47,8 +46,10 @@ const showPosition = (position) => {
 };
 // embed weather data in html
 const setData = (data, unitFlag) => {
+    // console.log("setData: ", data);
   var weather_icon = data.weather[0]["icon"];
   if (!unitFlag) {
+    console.log("setData: ", main_data_temp);
     main_data_temp.innerHTML = data.main.temp + " &degC";
     real_feel.innerHTML = data.main.feels_like + " &degC";
     high_low_temps.innerHTML =
@@ -107,7 +108,7 @@ const carousel = (e) => {
   var page_2_btn = sub_page.classList;
   var arrow_right = right_arrow.classList;
   var arrow_left = left_arrow.classList;
-  var carousel = carouselDiv.classList;
+//   var carousel = carouselDiv.classList;
 
   if (e.type == "load") {
     page_2.add("inactive");
