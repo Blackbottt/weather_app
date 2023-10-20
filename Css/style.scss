@@ -1,0 +1,51 @@
+@import 'mixins';
+@import 'variables';
+@import 'weather_pages';
+@import 'weather_btns';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  @include basicFlexBox(column, center, center, 100vw, 100vh);
+  background-color: $grey;
+  color: $text_color;
+}
+
+
+.active {
+  display: flex;
+  background-color: $purple_like;
+  opacity: 0.7;
+}
+.inactive {
+  display: none;
+}
+.icons {
+  font-size: $font1;
+  // border: 1px solid red;
+}
+.right-arrow {
+  right: 10%;
+}
+.left-arrow {
+  right: 90%;
+  opacity: 0.5;
+}
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  top: 45%;
+  font-size: $font1;
+}
+.right-arrow:hover,
+.left-arrow:hover {
+  cursor: pointer;
+  @include blurry ($off-white, 11.5px, 10px, 1);
+}
+@media (min-width: 35em) {
+}
+@media (min-width: 45em) {
+}

@@ -1,0 +1,42 @@
+.weather-btns {
+    @include basicFlexBox(row, space-between, center, 100%, 10%);
+    color: $purple_like;
+  }
+
+.btns {
+    @include proFlex(row, center, align-items, center, min-width, max-content); 
+    font-size: $font1;
+    letter-spacing: 0.1%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: inherit;
+  }
+  .btns:hover {
+    cursor: pointer;
+  }
+  .carousel {
+    @include basicFlexBox(row, center, center, 100%, 10%);
+  }
+  
+  .carousel > *:hover {
+    cursor: pointer;
+  }
+  
+  .main-page {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin: 0.5rem;
+    border: 1px solid $black;
+    border-radius: 50%;
+    background-color: $off_white;
+  }
+  .sub-page {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin: 0.5rem;
+    border: 1px solid $black;
+    border-radius: 50%;
+    background-color: $off_white;
+  }
